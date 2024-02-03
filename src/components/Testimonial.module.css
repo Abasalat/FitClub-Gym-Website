@@ -1,0 +1,73 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.left{
+    display: flex;
+    flex: 1 1;
+    color: white;
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left>:nth-child(1){
+    color: var(--orange);
+    font-weight:  bold;
+}
+
+.left>:nth-child(2),
+.left>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.right{
+    flex: 1;
+    position: relative;
+} 
+.right>img{
+    position: absolute;
+    width: 16rem;
+    height: 18rem;
+    object-fit: cover;
+    right: 16rem;
+    top: 2rem;
+}
+
+.right>:nth-child(1){
+    position: absolute;
+    width: 16rem;
+    height: 18rem;
+    border: 2px solid orange;
+    right: 17rem;
+    background-color: transparent;
+    top: 1rem;
+}
+.right>:nth-child(2){
+    position: absolute;
+    width: 16rem; 
+    height: 18rem;
+    right: 15rem;
+    background: var(--planCard);
+    top: 3rem;
+}
+
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 6rem;
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
