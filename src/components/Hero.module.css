@@ -19,7 +19,7 @@
 }
 
 .bestad{
-    margin-top: 3rem;
+    margin-top: 5rem;
     background-color: #363d42;
     border-radius: 4rem;
     width: fit-content;
@@ -53,6 +53,7 @@
     text-transform: uppercase;
     font-weight: bold;
     text-overflow: inherit;
+    margin-top: 3rem;
 }
 .herotext>div:nth-of-type(3){
     font-size: 1.5rem;
@@ -60,10 +61,12 @@
     text-transform: none;
     letter-spacing: 1px;
     width: 80%;
+    
 }
 .figures{
     display: flex;
     gap: 2rem;
+    margin-top: 5rem;
 }
 
 .figures>div{
@@ -139,17 +142,17 @@
 
 .heroimage{
     position: absolute;
-    top: 10rem;
-    right: 13.3rem;
-    width: 21rem;
+    top: 12rem;
+    right: 12rem;
+    width: 27rem;
 }
 
 .heroimageback{
     position: absolute;
-    top: 4rem;
-    right: 24rem;
     z-index: -1;
-    width: 14rem;
+    margin-right: 1rem;
+    top: 3.5rem;
+    width: 19rem;
 }
 
 .calories{
@@ -159,9 +162,9 @@
     border-radius: 5px;
     padding: 1rem;
     position: absolute;
-    top: 35rem;
-    right: 40rem;
+    top: 40rem;
     width: 60%;
+    margin-right: 5rem;
 }
 .calories> img{
     width: 3rem;
