@@ -22,3 +22,20 @@
 .headermenu>li:hover{
     color: orange;
 }
+@media screen and (max-width: 768px){
+    .logo{
+
+        width: 10rem;
+        height: 3rem;
+    }
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .headermenu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}

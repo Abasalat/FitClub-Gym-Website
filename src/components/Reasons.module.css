@@ -25,16 +25,14 @@
     grid-column: 2/4;
 }
 .left>:nth-child(3){
-    width: 17.3rem;
-    grid-column: 2/3;
+    width: 31.5rem;
+    grid-column: 2/4;
     grid-row: 2;
+    height: auto;
+    height: 14rem;
 
 }
-.left>:nth-child(4){
-    width: 13rem;
-    grid-row: 2;
-    grid-column: 3/4;
-}
+
 
 .right{
     flex: 1 1;
@@ -79,4 +77,35 @@
 }
 .partners>img{
     width: 2.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .reasons{
+        flex-direction: column;
+    }
+    .right>:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0.1rem;
+        font-size: xx-large;
+    }
+    .left{
+         grid-auto-rows: auto;
+         overflow: hidden;
+         margin-top: 1.5rem;
+    }
+    .left> :nth-child(1){
+        width: 7rem;
+        height: 20rem;
+    }
+    .left> :nth-child(2){
+        width: 15rem;
+        height: 11rem;
+    }
+    .left> :nth-child(3){
+        width: 11rem;
+        height: 8rem;
+    }
+
 }

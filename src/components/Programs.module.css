@@ -13,6 +13,7 @@
     color: white;
     text-transform: uppercase;
     font-style: italic;
+    margin-top: 1rem;
 }
 .programcategories{
     display: flex;
@@ -52,4 +53,21 @@
 .category:hover{
     background: var(--planCard);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .programs{
+        margin-top: 33rem;
+    }
+    .programsheader{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: xx-large;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .programcategories{
+        flex-direction: column;
+    }
 }

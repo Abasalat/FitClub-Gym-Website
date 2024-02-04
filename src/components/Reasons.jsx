@@ -10,12 +10,11 @@ import nike from "../assets/nike.png";
 import tick from "../assets/tick.png";
 const Reasons = () => {
   return (
-    <div className={styles.reasons}>
+    <div className={styles.reasons} id="reasons">
       <div className={styles.left}>
         <img src={image1} alt="" />
         <img src={image2} alt="" />
         <img src={image3} alt="" />
-        <img src={image4} alt="" />
       </div>
       <div className={styles.right}>
         <div>some reasons</div>

@@ -6,17 +6,19 @@ import hero_image_back from "..//assets/hero_image_back.png";
 import heart from "..//assets/heart.png";
 import calories from "..//assets/calories.png";
 import { motion } from "framer-motion";
+import NumberCounter from "number-counter";
 
 export default function Hero() {
   const transition = { type: "spring", duration: 3 };
+  const mobile = window.innerWidth <= 768 ? true : false;
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="hero">
       <div className={`blur ${styles.heroblur}`}></div>
       <div className={styles.left}>
         <Header />
         <div className={styles.bestad}>
           <motion.div
-            initial={{ left: "238px" }}
+            initial={{ left: mobile ? "170px" : "238px " }}
             whileInView={{ left: "8px" }}
             transition={transition}
           ></motion.div>
@@ -41,15 +43,36 @@ export default function Hero() {
 
         <div className={styles.figures}>
           <div>
-            <span>+140</span>
+            <span>
+              <NumberCounter
+                end={140}
+                start={100}
+                delay="4"
+                preFix="+"
+              ></NumberCounter>
+            </span>
             <span>expert coachs</span>
           </div>
           <div>
-            <span>+978</span>
+            <span>
+              <NumberCounter
+                end={978}
+                start={900}
+                delay="5"
+                preFix="+"
+              ></NumberCounter>
+            </span>
             <span>members joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <span>
+              <NumberCounter
+                end={50}
+                start={0}
+                delay="3"
+                preFix="+"
+              ></NumberCounter>
+            </span>
             <span>fitness Programs</span>
           </div>
           <div></div>

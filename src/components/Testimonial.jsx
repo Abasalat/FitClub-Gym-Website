@@ -10,7 +10,7 @@ const Testimonial = () => {
   const [selected, setSelected] = useState(0);
   const tLength = testimonialsData.length;
   return (
-    <div className={styles.testimonials}>
+    <div className={styles.testimonials} id="testimonials">
       <div className={styles.left}>
         <div>Testimonials</div>
         <div className="stroke-text">What they</div>

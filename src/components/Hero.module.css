@@ -188,5 +188,75 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .hero{
+        flex-direction: column;
+    }
+    .heroblur{
+        width: 14rem;
+    }
+    .bestad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .herotext{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .herotext > div:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .herobuttons{
+        justify-content: center;
+    }
+    .figures{
+        margin-top: -1rem;
+    }
+    .figures > div > span:nth-of-type(1){
+        font-size: large;
+    }
+    .figures > div > span:nth-of-type(2){
+        font-size: small;
+    }
+    .right{
+        position: relative;
+        background: none;
+    }
+    .heartrate{
+        left: 1rem;
+        top: 2rem;
+    }
+    .calories{
+        position: relative;
+        top: 8rem;
+        left: 2rem;
+        margin-top: -3rem;
+      
+    }
+    .calories>img{
+        width: 2rem;
+     
+    }
+    .calories >div > :nth-child(2){
+        color: white;
+        font-size: 1rem;
+        margin-top: -3rem;
+    }
+    .heroimage{
+        position: relative;
+        width: 13rem;
+        left: 8rem;
+        top: 5rem;
+        align-self: center;
+    }
+    .heroimageback{
+        width: 15rem;
+        left: 2rem;
+        top: 0rem;
+    } 
 }
